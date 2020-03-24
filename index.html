@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            #logo img{
+                position: relative;
+                float: left;
+                width: 100px;
+                margin-top: 1%;
+                left:3%;
+            }
+            header{
+                background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(background.jpg);
+                height: 100vh;
+                background-size: cover;
+                background-position:center;
+                background-repeat: no-repeat;
+            }           
+            ul{
+                float:right;
+                list-style-type: none;
+                margin-top: 25px;;
+            }
+            ul li{
+                display: inline-block;
+            }
+            ul li a{
+                text-decoration: none;
+                color:white;
+                padding: 5px 20px;
+                font-size:25px;
+                border-radius: 5px;
+            }
+            ul li a:hover{
+                color:green;
+                background:white;
+                transition: 0.5s ease;
+            }
+            ul li.active a{
+                color:green;
+                background:white;
+            }
+            .grid-container{
+                display: grid;
+                grid-template-columns: 160px 160px 160px;
+                grid-template-rows: 180px 180px 180px;
+                padding:10px;
+                position:fixed;
+                top:15%;
+                left:60%;
+                grid-gap: 10px; 
+            }
+            .grid-item{       
+                  
+                padding:20px;
+                background-size:cover ;
+                height:auto;
+                text-align: center;
+                vertical-align: auto;
+                border-radius: 10px;
+            }
+            .welcome{
+                color: ivory;
+                position:fixed;
+                top:40%;
+                left:13%;
+                font-size: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="logo.png">
+            </div>
+            <div class='main'>
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Emergency</a></li>                    
+                </ul>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item" style="background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(1.jpg);"></div>
+                <div class="grid-item" style="background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(2.jpg);"></div>
+                <div class="grid-item" style="background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(3.jpg);"></div>
+                <div class="grid-item" style="background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(4.jpg);"></div>
+                <div class="grid-item" style="background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(5.jpg);"></div>
+                <div class="grid-item" style="background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(6.png);"></div>
+                <div class="grid-item" style="background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(7.jpg);"></div>
+                <div class="grid-item" style="background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(8.png);"></div>
+                <div class="grid-item" style="background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(9.jpg);"></div>
+            </div>
+            <div class='welcome'>Welcome to <br>Kimsea's Hospital</div>
+        </header>
+    </body>
+</html>
